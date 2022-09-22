@@ -5,6 +5,13 @@ on:
   push:
     branches:
       - main
+
+# Set permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build-html:
     runs-on: ubuntu-latest
@@ -14,15 +21,8 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Setup Miniconda
-        uses: conda-incubator/setup-miniconda@v2
-        with:
-          auto-update-conda: true
-          auto-activate-base: false
-          miniconda-version: 'latest'
-          python-version: 3.8
-          environment-file: environment.yml
-          activate-environment: bioinfo-wiki
+      - name: Setup Micromamba
+        uses: mamba-org/provision-with-micromamba@v13
 
       - name: Build 
         shell: bash -l {0}

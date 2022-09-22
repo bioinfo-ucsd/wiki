@@ -12,15 +12,8 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Setup Miniconda # TODO: look into mamba
-        uses: conda-incubator/setup-miniconda@v2 
-        with:
-          auto-update-conda: true
-          auto-activate-base: false
-          miniconda-version: 'latest'
-          python-version: 3.8
-          environment-file: environment.yml
-          activate-environment: bioinfo-wiki
+      - name: Setup Micromamba
+        uses: mamba-org/provision-with-micromamba@v13
 
       - name: Build 
         shell: bash -l {0}
