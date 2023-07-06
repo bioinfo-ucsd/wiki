@@ -1,4 +1,4 @@
 root: docs/index
-format: jb-article
-sections:
+format: jb-book
+chapters:
 - file: docs/jupyter_setup
