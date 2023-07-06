@@ -17,4 +17,4 @@ jobs:
 
       - name: Build 
         shell: bash -l {0}
-        run: jb build wiki/
+        run: jb build -W -n --keep-going -v wiki/
