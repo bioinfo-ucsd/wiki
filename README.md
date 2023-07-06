@@ -7,9 +7,11 @@ This is a collection of bioinformatics and computational biology best practices 
 
 ## Viewing the published wiki
 
-This repository is published automatically to [bioinfo-ucsd.github.io/wiki](https://bioinfo-ucsd.github.io/wiki) upon `push` to the `main` branch.
+This repository is published automatically to [bioinfo-ucsd.github.io/wiki](https://bioinfo-ucsd.github.io/wiki) upon merging a commit into the `main` branch.
 
-<!-- TODO: add contibuting guidelines -->
+## Contributing
+
+If you are a member of the [@bioinfo-ucsd Github org](https://github.com/bioinfo-ucsd), simply create a new branch, make your edits, and then open a pull request! Otherwise, please feel free to make changes on a fork of our repository and then open a pull request.
 
 ## Building the wiki on your computer
 
