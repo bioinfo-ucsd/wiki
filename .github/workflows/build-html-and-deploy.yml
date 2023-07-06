@@ -1,7 +1,5 @@
 name: Build HTML and Deploy to GitHub Pages
 on:
-  schedule:
-    - cron: '0 0 * * *'
   push:
     branches:
       - main
@@ -21,7 +19,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Setup Micromamba
+      - name: Setup Micromamba # TODO: cache the environment
         uses: mamba-org/provision-with-micromamba@v13
 
       - name: Build 
