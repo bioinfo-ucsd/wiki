@@ -1,4 +1,5 @@
 root: docs/index
 format: jb-book
 chapters:
+- file: docs/reproducibility
 - file: docs/jupyter_setup
