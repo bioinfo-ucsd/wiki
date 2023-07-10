@@ -26,9 +26,12 @@ binder:
 
 # LaTeX settings
 # Uncomment when adding references
-# bibtex_bibfiles:
-#    - _bibliography/references.bib
+sphinx:
+  config:
+    bibtex_reference_style: author_year
+bibtex_bibfiles: references.bib
 latex:
   latex_engine                : "xelatex"
   latex_documents:
     targetname: book.tex
+
