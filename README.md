@@ -38,3 +38,9 @@ To remove the build folder (including `cached` executables), you can run:
 ```bash
 jb clean --all wiki/
 ```
+
+Alternatively, you can run the following script to build the book and automatically watch for changes!
+
+```bash
+python jb-serve.py wiki
+```
