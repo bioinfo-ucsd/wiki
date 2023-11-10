@@ -9,3 +9,4 @@ dependencies:
   - jupyter-book
   - sphinx
   - docutils==0.17.1
+  - livereload
