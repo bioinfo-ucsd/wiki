@@ -1,5 +1,11 @@
 root: docs/index
 format: jb-book
 chapters:
-- file: docs/reproducibility
 - file: docs/jupyter_setup
+- file: docs/reproducibility
+  sections:
+  - file: docs/reproducibility/dependencies
+  - file: docs/reproducibility/conda
+  - file: docs/reproducibility/containers
+  - file: docs/reproducibility/workflow_managers
+
