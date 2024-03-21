@@ -2,3 +2,4 @@ root: docs/index
 format: jb-book
 chapters:
 - file: docs/jupyter_setup
+- file: docs/contributing

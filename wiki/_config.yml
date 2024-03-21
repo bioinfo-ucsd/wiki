@@ -1,5 +1,5 @@
 title : Bioinformatics Wiki
-author: Arya Massarat and Michael Cuoco
+author: BISB/BMI students at UC San Diego
 
 # Short description about the book
 description: >-
@@ -32,3 +32,9 @@ latex:
   latex_engine                : "xelatex"
   latex_documents:
     targetname: book.tex
+
+parse:
+  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default! See here: https://jupyterbook.org/en/stable/customize/config.html
+    - html_image
