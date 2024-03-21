@@ -13,28 +13,6 @@ This repository is published automatically to [bioinfo-ucsd.github.io/wiki](http
 
 If you are a member of the [@bioinfo-ucsd Github org](https://github.com/bioinfo-ucsd), simply create a new branch, make your edits, and then open a pull request! Otherwise, please feel free to make changes on a fork of our repository and then open a pull request.
 
-## Building the wiki on your computer
+See our contributing docs for detailed instructions:
 
-The conda environment is provided as `environment.yml`. This environment is used for all testing and building by Github Actions.
-
-Once you have the environment installed and activated. Run the following command in your terminal:
-
-```bash
-jb build wiki/
-```
-
-You can then preview the book by opening the file `wiki/_build/html/index.html` in your browser.
-
-If you would like to work with a clean build, you can empty the build folder by running:
-
-```bash
-jb clean wiki/
-```
-
-If jupyter execution is cached, this command will not delete the cached folder.
-
-To remove the build folder (including `cached` executables), you can run:
-
-```bash
-jb clean --all wiki/
-```
+https://bioinfo-ucsd-wiki.readthedocs.io/docs/contributing.html
